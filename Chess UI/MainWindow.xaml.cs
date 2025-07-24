@@ -29,6 +29,7 @@ namespace Chess_UI
             InitializeBoard();
             gameState = new GameState(Player.White, Board.Initial());
             DrawBoard(gameState.Board);
+            SetCursor(gameState.CurrentPlayer);
         }
         private void InitializeBoard()
         {
@@ -95,6 +96,7 @@ namespace Chess_UI
         {
             gameState.MakeMove(move);
             DrawBoard(gameState.Board);
+            SetCursor(gameState.CurrentPlayer);
         }
         private Position ToSquarePosition(Point point)
         {
@@ -132,6 +134,17 @@ namespace Chess_UI
             foreach(Position to in moveCache.Keys)
             {
                 highlights[to.Row, to.Column].Fill = Brushes.Transparent;
+            }
+        }
+
+        private void SetCursor(Player player)
+        {
+            if(player == Player.White)
+            {
+                Cursor = ChessCursors.WhiteCursor;
+            }else if(player == Player.Black)
+            {
+                Cursor = ChessCursors.BlackCursor;
             }
         }
     }
