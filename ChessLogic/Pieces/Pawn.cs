@@ -22,7 +22,7 @@ namespace ChessLogic
         public override Piece Copy()
         {
             Pawn copy = new Pawn(Color);
-            copy.hasMoved = hasMoved;
+            copy.HasMoved = HasMoved;
             return copy;
         }
         private static bool CanMoveTo(Position pos, Board board)
@@ -44,7 +44,7 @@ namespace ChessLogic
             {
                 yield return new NormalMove(from, singlePush);
                 Position doublePush = singlePush + forward;
-                if(!hasMoved && CanMoveTo(doublePush, board))
+                if(!HasMoved && CanMoveTo(doublePush, board))
                 {
                     yield return new NormalMove(from, doublePush);
                 }

@@ -12,7 +12,7 @@ namespace ChessLogic
         public override Piece Copy()
         {
             Queen copy = new Queen(Color);
-            copy.hasMoved = hasMoved;
+            copy.HasMoved = HasMoved;
             return copy;
         }
         private static readonly Direction[] dirs = new Direction[]

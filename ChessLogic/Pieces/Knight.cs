@@ -11,7 +11,7 @@
         public override Piece Copy()
         {
             Knight copy = new Knight(Color);
-            copy.hasMoved = hasMoved;
+            copy.HasMoved = HasMoved;
             return copy;
         }
         private static IEnumerable<Position> PotentialToPositions(Position from)

@@ -6,17 +6,17 @@ namespace ChessLogic
         public override MoveType Type => MoveType.Normal;
         public override Position FromPos { get; }
         public override Position ToPos { get; }
-        public NormalMove(Position fromPos, Position toPos)
+        public NormalMove(Position from, Position to)
         {
-            FromPos = fromPos;
-            ToPos = toPos;
+            FromPos = from;
+            ToPos = to;
         }
         public override void Execute(Board board)
         {
             Piece piece = board[FromPos];
             board[ToPos] = piece;
             board[FromPos] = null;
-            piece.hasMoved = true;
+            piece.HasMoved = true;
         }
     }
 }

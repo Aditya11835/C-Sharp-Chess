@@ -23,7 +23,7 @@ namespace ChessLogic
         public override Piece Copy()
         {
             King copy = new King(Color);
-            copy.hasMoved = hasMoved;
+            copy.HasMoved = HasMoved;
             return copy;
         }
         private IEnumerable<Position> MovePositions(Position from, Board board)

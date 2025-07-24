@@ -12,7 +12,7 @@ namespace ChessLogic
         public override Piece Copy()
         {
             Rook copy = new Rook(Color);
-            copy.hasMoved = hasMoved;
+            copy.HasMoved = HasMoved;
             return copy;
         }
         private static readonly Direction[] dirs = new Direction[]
@@ -20,7 +20,7 @@ namespace ChessLogic
             Direction.North,
             Direction.South,
             Direction.East,
-            Direction.West,
+            Direction.West
         };
         public override IEnumerable<Move> GetMoves(Position from, Board board)
         {

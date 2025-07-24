@@ -8,15 +8,25 @@
         Title="Chess" Width="600" SizeToContent="Height"
         Icon="/Assets/icon.ico"
         WindowStartupLocation="CenterScreen" Background="#101010">
+
     <Viewbox>
-        <Grid x:Name="BoardGrid" Width="600" Height="600">
+        <Grid x:Name="BoardGrid" Width="600" Height="600"
+              MouseDown="BoardGrid_MouseDown">
+
+            <!-- Background board image -->
             <Grid.Background>
-                <ImageBrush ImageSource="/Assets/Board.png"></ImageBrush>
+                <ImageBrush ImageSource="/Assets/Board.png" />
             </Grid.Background>
+
+            <!-- Move highlights layer -->
+            <UniformGrid x:Name="HighlightGrid"
+                         Rows="8" Columns="8">
+            </UniformGrid>
+
+            <!-- Chess pieces layer -->
             <UniformGrid x:Name="PieceGrid"
                          Rows="8" Columns="8"
                          RenderOptions.BitmapScalingMode="HighQuality">
-                
             </UniformGrid>
         </Grid>
     </Viewbox>
