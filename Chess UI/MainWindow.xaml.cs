@@ -60,26 +60,15 @@ namespace Chess_UI
 
         private void BoardGrid_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            try
+            Point point = e.GetPosition(BoardGrid);
+            Position pos = ToSquarePosition(point);    
+            if (selectedPos == null)
             {
-                Point point = e.GetPosition(BoardGrid);
-                Position pos = ToSquarePosition(point);
-                Console.WriteLine($"Position created: Row={pos.Row}, Col={pos.Column}");
-
-                if (selectedPos == null)
-                {
-                    Console.WriteLine("Calling OnFromPositionSelected");
-                    OnFromPositionSelected(pos);
-                }
-                else
-                {
-                    Console.WriteLine("Calling OnToPositionSelected");
-                    OnToPositionSelected(pos);
-                }
+                OnFromPositionSelected(pos);
             }
-            catch (Exception ex)
+            else
             {
-                Console.WriteLine($"🔥 EXCEPTION in MouseDown: {ex.Message}");
+                OnToPositionSelected(pos);
             }
         }
 
