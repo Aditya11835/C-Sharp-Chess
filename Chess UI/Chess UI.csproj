@@ -10,22 +10,22 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Assets\ChessAssets\BishopB.png" />
-    <None Remove="Assets\ChessAssets\BishopW.png" />
-    <None Remove="Assets\ChessAssets\Board.png" />
-    <None Remove="Assets\ChessAssets\CursorB.cur" />
-    <None Remove="Assets\ChessAssets\CursorW.cur" />
-    <None Remove="Assets\ChessAssets\icon.ico" />
-    <None Remove="Assets\ChessAssets\KingB.png" />
-    <None Remove="Assets\ChessAssets\KingW.png" />
-    <None Remove="Assets\ChessAssets\KnightB.png" />
-    <None Remove="Assets\ChessAssets\KnightW.png" />
-    <None Remove="Assets\ChessAssets\PawnB.png" />
-    <None Remove="Assets\ChessAssets\PawnW.png" />
-    <None Remove="Assets\ChessAssets\QueenB.png" />
-    <None Remove="Assets\ChessAssets\QueenW.png" />
-    <None Remove="Assets\ChessAssets\RookB.png" />
-    <None Remove="Assets\ChessAssets\RookW.png" />
+    <None Remove="Assets\BishopB.png" />
+    <None Remove="Assets\BishopW.png" />
+    <None Remove="Assets\Board.png" />
+    <None Remove="Assets\CursorB.cur" />
+    <None Remove="Assets\CursorW.cur" />
+    <None Remove="Assets\icon.ico" />
+    <None Remove="Assets\KingB.png" />
+    <None Remove="Assets\KingW.png" />
+    <None Remove="Assets\KnightB.png" />
+    <None Remove="Assets\KnightW.png" />
+    <None Remove="Assets\PawnB.png" />
+    <None Remove="Assets\PawnW.png" />
+    <None Remove="Assets\QueenB.png" />
+    <None Remove="Assets\QueenW.png" />
+    <None Remove="Assets\RookB.png" />
+    <None Remove="Assets\RookW.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -33,21 +33,21 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="Assets\ChessAssets\BishopW.png" />
-    <Resource Include="Assets\ChessAssets\Board.png" />
-    <Resource Include="Assets\ChessAssets\CursorB.cur" />
-    <Resource Include="Assets\ChessAssets\CursorW.cur" />
-    <Resource Include="Assets\ChessAssets\icon.ico" />
-    <Resource Include="Assets\ChessAssets\KingB.png" />
-    <Resource Include="Assets\ChessAssets\KingW.png" />
-    <Resource Include="Assets\ChessAssets\KnightB.png" />
-    <Resource Include="Assets\ChessAssets\KnightW.png" />
-    <Resource Include="Assets\ChessAssets\PawnB.png" />
-    <Resource Include="Assets\ChessAssets\PawnW.png" />
-    <Resource Include="Assets\ChessAssets\QueenB.png" />
-    <Resource Include="Assets\ChessAssets\QueenW.png" />
-    <Resource Include="Assets\ChessAssets\RookB.png" />
-    <Resource Include="Assets\ChessAssets\RookW.png" />
+    <Resource Include="Assets\BishopW.png" />
+    <Resource Include="Assets\Board.png" />
+    <Resource Include="Assets\CursorB.cur" />
+    <Resource Include="Assets\CursorW.cur" />
+    <Resource Include="Assets\icon.ico" />
+    <Resource Include="Assets\KingB.png" />
+    <Resource Include="Assets\KingW.png" />
+    <Resource Include="Assets\KnightB.png" />
+    <Resource Include="Assets\KnightW.png" />
+    <Resource Include="Assets\PawnB.png" />
+    <Resource Include="Assets\PawnW.png" />
+    <Resource Include="Assets\QueenB.png" />
+    <Resource Include="Assets\QueenW.png" />
+    <Resource Include="Assets\RookB.png" />
+    <Resource Include="Assets\RookW.png" />
   </ItemGroup>
 
 </Project>
