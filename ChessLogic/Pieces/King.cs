@@ -1,5 +1,4 @@
-﻿using System.Runtime.Serialization;
-using ChessLogic.Moves;
+﻿
 namespace ChessLogic
 {
     public class King : Piece
@@ -40,6 +39,13 @@ namespace ChessLogic
                 {
                     yield return to;
                 }
+            }
+        }
+        public override IEnumerable<Move> GetMoves(Position from, Board board)
+        {
+            foreach(Position to in MovePositions(from, board))
+            {
+                yield return new NormalMove(from, to);
             }
         }
     }

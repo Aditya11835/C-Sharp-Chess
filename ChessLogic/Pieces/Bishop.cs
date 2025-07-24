@@ -1,5 +1,4 @@
 ﻿
-using ChessLogic.Moves;
 namespace ChessLogic
 {
     public class Bishop : Piece

@@ -1,5 +1,5 @@
 ﻿
-using ChessLogic.Moves;
+
 namespace ChessLogic
 {
     public class Pawn : Piece

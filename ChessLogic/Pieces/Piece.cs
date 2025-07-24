@@ -1,4 +1,4 @@
-﻿using ChessLogic.Moves;
+﻿
 namespace ChessLogic
 {
     public abstract class Piece

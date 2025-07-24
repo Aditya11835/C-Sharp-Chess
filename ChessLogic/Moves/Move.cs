@@ -1,5 +1,5 @@
 ﻿
-namespace ChessLogic.Moves
+namespace ChessLogic
 {
     public abstract class Move
     {
