@@ -1,0 +1,53 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <RootNamespace>Chess_UI</RootNamespace>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\ChessAssets\BishopB.png" />
+    <None Remove="Assets\ChessAssets\BishopW.png" />
+    <None Remove="Assets\ChessAssets\Board.png" />
+    <None Remove="Assets\ChessAssets\CursorB.cur" />
+    <None Remove="Assets\ChessAssets\CursorW.cur" />
+    <None Remove="Assets\ChessAssets\icon.ico" />
+    <None Remove="Assets\ChessAssets\KingB.png" />
+    <None Remove="Assets\ChessAssets\KingW.png" />
+    <None Remove="Assets\ChessAssets\KnightB.png" />
+    <None Remove="Assets\ChessAssets\KnightW.png" />
+    <None Remove="Assets\ChessAssets\PawnB.png" />
+    <None Remove="Assets\ChessAssets\PawnW.png" />
+    <None Remove="Assets\ChessAssets\QueenB.png" />
+    <None Remove="Assets\ChessAssets\QueenW.png" />
+    <None Remove="Assets\ChessAssets\RookB.png" />
+    <None Remove="Assets\ChessAssets\RookW.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ChessLogic\ChessLogic.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\ChessAssets\BishopW.png" />
+    <Resource Include="Assets\ChessAssets\Board.png" />
+    <Resource Include="Assets\ChessAssets\CursorB.cur" />
+    <Resource Include="Assets\ChessAssets\CursorW.cur" />
+    <Resource Include="Assets\ChessAssets\icon.ico" />
+    <Resource Include="Assets\ChessAssets\KingB.png" />
+    <Resource Include="Assets\ChessAssets\KingW.png" />
+    <Resource Include="Assets\ChessAssets\KnightB.png" />
+    <Resource Include="Assets\ChessAssets\KnightW.png" />
+    <Resource Include="Assets\ChessAssets\PawnB.png" />
+    <Resource Include="Assets\ChessAssets\PawnW.png" />
+    <Resource Include="Assets\ChessAssets\QueenB.png" />
+    <Resource Include="Assets\ChessAssets\QueenW.png" />
+    <Resource Include="Assets\ChessAssets\RookB.png" />
+    <Resource Include="Assets\ChessAssets\RookW.png" />
+  </ItemGroup>
+
+</Project>
