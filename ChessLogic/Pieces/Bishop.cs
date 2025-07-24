@@ -1,4 +1,5 @@
 ﻿
+using ChessLogic.Moves;
 namespace ChessLogic
 {
     public class Bishop : Piece
@@ -14,6 +15,17 @@ namespace ChessLogic
             Bishop copy = new Bishop(Color);
             copy.hasMoved = hasMoved;
             return copy;
+        }
+        private static readonly Direction[] dirs = new Direction[]
+        {
+            Direction.NorthWest,
+            Direction.SouthEast,
+            Direction.NorthEast,
+            Direction.SouthWest,
+        };
+        public override IEnumerable<Move> GetMoves(Position from, Board board)
+        {
+            return MovePositionsInDirs(from, board, dirs).Select(to => new NormalMove(from, to));
         }
     }
 }

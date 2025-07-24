@@ -14,5 +14,13 @@
             copy.hasMoved = hasMoved;
             return copy;
         }
+        private static readonly Direction[] dirs = new Direction[]
+        {
+            Direction.North,
+            Direction.South,
+            Direction.East,
+            Direction.West,
+        };
+
     }
 }
