@@ -1,4 +1,6 @@
-﻿namespace ChessLogic
+﻿using ChessLogic.Moves;
+
+namespace ChessLogic
 {
     public class Rook : Piece
     {
@@ -21,6 +23,9 @@
             Direction.East,
             Direction.West,
         };
-
+        public override IEnumerable<Move> GetMoves(Position from, Board board)
+        {
+            return MovePositionsInDirs(from, board, dirs).Select(to => new NormalMove(from, to));
+        }
     }
 }

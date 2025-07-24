@@ -1,4 +1,6 @@
-﻿namespace ChessLogic
+﻿using ChessLogic.Moves;
+
+namespace ChessLogic
 {
     public class Queen: Piece
     {
@@ -13,6 +15,21 @@
             Queen copy = new Queen(Color);
             copy.hasMoved = hasMoved;
             return copy;
+        }
+        private static readonly Direction[] dirs = new Direction[]
+        {
+            Direction.North,
+            Direction.South,
+            Direction.East,
+            Direction.West,
+            Direction.NorthEast,
+            Direction.NorthWest,
+            Direction.SouthEast,
+            Direction.SouthWest
+        };
+        public override IEnumerable<Move> GetMoves(Position from, Board board)
+        {
+            return MovePositionsInDirs(from, board, dirs).Select(to => new NormalMove(from, to));
         }
     }
 }
