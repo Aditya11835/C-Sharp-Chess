@@ -23,7 +23,7 @@
                 _ => new Queen(color)
             };
         }
-        public override void Execute(Board board)
+        public override bool Execute(Board board)
         {
             Piece pawn = board[FromPos];
             board[FromPos] = null;
@@ -31,6 +31,7 @@
             Piece promotedPiece = CreatePromotionPiece(pawn.Color);
             promotedPiece.HasMoved = true;
             board[ToPos] = promotedPiece;
+            return true;
         }
 
     }

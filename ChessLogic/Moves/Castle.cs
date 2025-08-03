@@ -29,10 +29,11 @@
                 rookToPos = new Position(kingPos.Row, 3);
             }
         }
-        public override void Execute(Board board)
+        public override bool Execute(Board board)
         {
             new NormalMove(FromPos, ToPos).Execute(board);
             new NormalMove(rookFromPos, rookToPos).Execute(board);
+            return false;
         }
 
         public override bool IsLegal(Board board)
