@@ -1,5 +1,5 @@
 # Overview
-This will be a fully interactive two-player Chess game built in C#, featuring smooth piece movement, grid snapping, and basic chess rules implementation.
+A fully interactive two-player Chess game built in C#, featuring smooth piece movement, grid snapping, and basic chess rules implementation.
 
 # Features
 Click to Select and Drop Piece Movement
